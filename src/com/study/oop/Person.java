@@ -11,6 +11,15 @@ public class Person {
         this.job = job;
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", job='" + job + '\'' +
+                '}';
+    }
+
     public String getName() {
         return name;
     }

@@ -9,7 +9,10 @@ public class OopExercise {
         Person person3 = new Person("tom", 24, "employee");
         Person[] persons = {person1, person2, person3};
         new Utils().bubbleSortByAge(persons);
-
+        //打印结果
+        for (Person person : persons) {
+            System.out.println(person);
+        }
     }
 }
 
