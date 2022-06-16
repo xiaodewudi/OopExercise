@@ -29,6 +29,21 @@ public class OopExercise {
         Employee e2=new Staff("july",200,20);
         e1.showSalary();
         e2.showSalary();
+        //第四题，扩展BankAccount类
+        //扩展新类CheckingAccount，对每次存款和取款都收1美元手续费
+        //扩展新类SavingAccount，每个月有利息产生，earnMonthlyInterest，每月三次免手续费的存款或取款，并在方法中重置交易次数
+        BankAccount ba= new BankAccount(10000);
+        ba.deposit(1000);
+        ba.deposit(1000);
+        ba.withdraw(500);
+        ba.withdraw(500);
+        System.out.println(ba.getBanlance());
+        //第五题，设计一个point类，X,Y坐标通过构造器提供
+        //提供一个子类LabeledPoint，构造器接受一个X,Y和标签值
+        Point p=new LabeledPoint("坐标A",512,222);
+        System.out.println(p.toString());
+        //编写doctor类，name，age，gender，job，sal，getset方法，5个参数构造器
+        //重写父类equals方法，判断两个对象是否相等
 
     }
 }
