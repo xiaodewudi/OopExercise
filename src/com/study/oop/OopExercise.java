@@ -41,10 +41,13 @@ public class OopExercise {
         //第五题，设计一个point类，X,Y坐标通过构造器提供
         //提供一个子类LabeledPoint，构造器接受一个X,Y和标签值
         Point p=new LabeledPoint("坐标A",512,222);
-        System.out.println(p.toString());
+        System.out.println(p);
         //编写doctor类，name，age，gender，job，sal，getset方法，5个参数构造器
         //重写父类equals方法，判断两个对象是否相等
-
+        Doctor d1 = new Doctor("AA",20,"男","nurse",5000);
+        Doctor d2 = new Doctor("AA",21,"男","nurse",5000);
+        System.out.println(d1.equals(d2));
+        //
     }
 }
 
