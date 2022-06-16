@@ -1,23 +1,19 @@
 package com.study.oop;
 
-public class CheckingAccount extends SavingAccount {
+public class CheckingAccount extends BankAccount {
     private double commission = 1;
 
-    public CheckingAccount() {
+    public CheckingAccount(double initialBanlance) {
+        super(initialBanlance);
     }
 
-    public CheckingAccount(double initialBanlance, int dealCounts, double commission) {
-        super(initialBanlance, dealCounts);
-        this.commission = commission;
+    @Override
+    public void deposit(double amount) {
+        super.deposit(amount - commission);
     }
 
-
-    public double checkAmount(double balance) {
-        if (super.getDealCounts() <= 3) {
-            super.setDealCounts(super.getDealCounts() + 1);
-            return balance;
-        } else {
-            return balance -= commission;
-        }
+    @Override
+    public void withdraw(double amount) {
+        super.withdraw(amount + commission);
     }
 }
