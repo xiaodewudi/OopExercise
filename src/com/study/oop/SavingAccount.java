@@ -10,6 +10,7 @@ public class SavingAccount extends BankAccount {
 
     public void earnMonthlyInterest() {
         super.deposit(super.getBanlance() * rate);
+        dealCounts = 1;
     }
 
     @Override
