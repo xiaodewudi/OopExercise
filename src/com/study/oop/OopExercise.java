@@ -47,7 +47,6 @@ public class OopExercise {
         Doctor d1 = new Doctor("AA",20,"男","nurse",5000);
         Doctor d2 = new Doctor("AA",21,"男","nurse",5000);
         System.out.println(d1.equals(d2));
-        //
     }
 }
 
